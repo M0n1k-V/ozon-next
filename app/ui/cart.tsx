@@ -1,4 +1,4 @@
-export default function Cart() {
+export default function cart() {
 return (
     <div className="cart">
   <div className="cart-body">
