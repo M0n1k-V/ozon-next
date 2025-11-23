@@ -1,6 +1,6 @@
 'use client'
 import { Product } from "../models/product.model";
-import { useCart } from "../providers/CartProvider";
+import { useCart } from "../providers/сartProvider";
 
 export default function AddToCartButton({product}: {product: Product}) {
     const {addCartItem} = useCart()

@@ -1,7 +1,6 @@
 'use client'
 
-import { useCart } from "../providers/CartProvider";
-
+import { useCart } from "../providers/сartProvider";
 export default function CartButton() {
     const {setOpen} = useCart()
   return (

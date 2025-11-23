@@ -1,9 +1,8 @@
 'use client'
 
-import { useCart } from "../providers/CartProvider";
+import { useCart } from "../providers/сartProvider";
 
-export default function cart() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function Cart() { 
   const {cartItems, isOpen, setOpen, deleteCartItem} = useCart()
 return (
   <>
@@ -28,7 +27,7 @@ return (
 				<div className="card-body justify-content-between">
 					<div className="card-price">{item.price} ₽ * {item.count} = {item.price * item.count} ₽</div>
 					<h5 className="card-title">{item.title}</h5>
-					<button className="btn btn-primary" onClick={() => deleteCartItem(product)}>Удалить</button>
+					<button className="btn btn-primary" onClick={() => deleteCartItem(item)}>Удалить</button>
 			    </div>
 			</div>
         ))}
