@@ -3,7 +3,7 @@ import Filter from "./Filter"
 import Search from "./Search";
 import CartButton from "./CartButton";
 
-/* eslint-disable @next/next/no-html-link-for-pages */
+
 export default function Header() {
   return (
     <header>

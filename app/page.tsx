@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { getData } from "./actions";
 import { Product } from "./models/product.model";
 import { Query } from "./models/query.model";
-import AddToCartButton from "./ui/addToCartButton";
+import AddToCartButton from "./ui/AddToCartButton";
 
-/* eslint-disable @next/next/no-html-link-for-pages */
 export default async function Home({searchParams}: {searchParams: Query}) {
   const query = await searchParams;
   const products = await getData(query);
@@ -66,8 +64,7 @@ export default async function Home({searchParams}: {searchParams: Query}) {
                         <div className="card-img-wrapper">
                           <span
                             className="card-img-top"
-                            style={{ backgroundImage: `url(${product.img})` }}
-                          ></span>
+                            style={{ backgroundImage: `url(${product.img})` }}></span>
                         </div>
                         <div className="card-body justify-content-between">
                           <div className="card-price">{product.price} ₽</div>
@@ -76,7 +73,7 @@ export default async function Home({searchParams}: {searchParams: Query}) {
                         </div>
                       </div>
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>

@@ -15,7 +15,6 @@ if(!context) {
     return context
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function CartProvider({children}: {children: ReactNode}) {
     const [isOpen, setOpen] = useState<boolean>(false)
     const [cartItems, setCartItems] = useState<CartItem[]>([])
@@ -31,7 +30,6 @@ export default function CartProvider({children}: {children: ReactNode}) {
                         return p
                     }
                 })
-                // prev.map(p => p.id === findProduct.id ? {...p, count: p.count + 1} : p)
             } else {
                 return [...prev, {...product, count: 1}]
             }

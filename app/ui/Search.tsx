@@ -31,7 +31,7 @@ export default function Search() {
     } else {
         updateSearch('')
     }
-  }, [])
+  }, [searchParams])
 
   return (
     <div className="search">

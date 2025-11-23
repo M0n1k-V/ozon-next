@@ -1,9 +1,9 @@
 'use client'
 
-import { useCart } from "../providers/cartProvider";
+import { useCart } from "../providers/CartProvider";
 
 export default function cart() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars, react-hooks/rules-of-hooks
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const {cartItems, isOpen, setOpen, deleteCartItem} = useCart()
 return (
   <>
